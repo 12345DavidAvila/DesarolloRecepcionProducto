@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesarolloRecepcionProducto.Vistas.MenuProducPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Label Text="MENU PRODUCTOS" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="Title"/>
+
+
+
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+
+
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="INGRESO PRODUCTO" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center" FontSize="17" VerticalTextAlignment="End"/>
+
+
+                <Image Source="Ingreso.jfif"  WidthRequest="100" HeightRequest="100" Grid.Row="1" Grid.Column="0"  />
+
+                <Label Text="ACTUALIZAR PRODUCTO" Grid.Row="0" Grid.Column="1"  HorizontalOptions="Center" FontSize="17" VerticalTextAlignment="End" />
+                <Image Source="Actualizar.jfif"  WidthRequest="100" HeightRequest="100"  Grid.Row="3" Grid.Column="0" />
+
+                <Label Text="ELIMINAR PRODUCTO"  Grid.Row="2" Grid.Column="0"  HorizontalOptions="Center" FontSize="18"  VerticalTextAlignment="End"/>
+                <Image Source="Eliminar.jfif"   WidthRequest="100" HeightRequest="100"  Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="BUSCAR PRODUCTO "  Grid.Row="2" Grid.Column="1"  HorizontalOptions="Center" FontSize="20" VerticalTextAlignment="End"/>
+                <Image Source="Buscar_p.jfif"   WidthRequest="100" HeightRequest="100" Grid.Row="3" Grid.Column="1"/>
+
+
+
+            </Grid>
+
+            <Button x:Name="btnRegresar" VerticalOptions="Center" Text="Regresar Menu" Clicked="btnRegresar_Clicked" BackgroundColor="Blue" TextColor="White"/>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

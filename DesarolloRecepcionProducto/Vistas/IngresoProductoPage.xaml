@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesarolloRecepcionProducto.Vistas.IngresoProductoPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="REGISTRO USUARIO" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="Title"/>
+
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Source="escaner.png" />
+                <Label Text="Serie" Grid.Row="0" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtSerie" Placeholder="Ingrese Serial" Grid.Row="0" Grid.Column="1" ></Entry>
+                <Label Text="Nombre" Grid.Row="1" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtNombre" Placeholder="Ingrese Nombre" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"></Entry>
+                <Label Text="Cantidad" Grid.Row="2" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtCantidad" Placeholder="Ingrese Cantidad" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"></Entry>
+                <Label Text="Precio Compra" Grid.Row="3" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtPrecioCompra" Placeholder="Ingrese Precio Compra" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"></Entry>
+                <Label Text="Precio Venta" Grid.Row="4" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtPrecioVenta" Placeholder="Ingrese Precio Venta" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"></Entry>
+                <Label Text="Categoría" Grid.Row="5" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtCategoria" Placeholder="Ingrese Categoría" Keyboard="Numeric" Grid.Row="5" Grid.Column="1"></Entry>
+                <Label Text="Marca" Grid.Row="6" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtMarca" Placeholder="Ingrese Marca" Keyboard="Numeric" Grid.Row="6" Grid.Column="1"></Entry>
+                <Label Text="Ubicación" Grid.Row="7" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtUbicacion" Placeholder="Ingrese Ubicación" Keyboard="Numeric" Grid.Row="7" Grid.Column="1"></Entry>
+                <Label Text="Estado" Grid.Row="8" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtEstado" Placeholder="Ingrese Estado" Keyboard="Numeric" Grid.Row="8" Grid.Column="1"></Entry>
+
+            </Grid>
+            <Button x:Name="btnRegistrarProducto" VerticalOptions="Center" Text="Registrar Producto" Clicked="btnRegistrarProducto_Clicked" BackgroundColor="Blue" TextColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

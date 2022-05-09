@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesarolloRecepcionProducto.Vistas.InfoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="DERECHOS APLICACIÓN" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="Title"/>
+            <Image Source="Logo.jpeg" />
+
+
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                <Label Text="SISTEMA DE INGRESO DE PRODUCTOS" Grid.Row="0"  FontSize="Medium" HorizontalOptions="Center"/>
+                <Label Text="ELABORADO POR:" Grid.Row="1" FontSize="Medium"  HorizontalOptions="Center"/>
+                <Label Text="DAVID AVILA" Grid.Row="2"  FontSize="Medium"  HorizontalOptions="Center"/>
+                <Label Text="HENRY LLANES" Grid.Row="3"  FontSize="Medium"  HorizontalOptions="Center"/>
+                <Label Text="DIEGO QUISHPE" Grid.Row="4" FontSize="Medium"  HorizontalOptions="Center"/>
+
+            </Grid>
+            <Button x:Name="btnRegresarMenu" VerticalOptions="Center" Text="Regresar Menú" Clicked="btnRegresarMenu_Clicked" BackgroundColor="Blue" TextColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
