@@ -10,7 +10,7 @@ namespace DesarolloRecepcionProducto
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Vistas.RegUsuarioPage());
+            MainPage = new NavigationPage(new Vistas.BuscarProductoPage());
         }
 
         protected override void OnStart()
@@ -25,9 +25,6 @@ namespace DesarolloRecepcionProducto
         {
         }
 
-        private void btnRegistrarProducto_Clicked(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DesarolloRecepcionProducto.Vistas.RegUsuarioPage">
+             x:Class="DesarolloRecepcionProducto.Vistas.RegUsuarioPage"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
 
             <Label Text="REGISTRO USUARIO" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="Title"/>
-            <Image Source="Login.png" />
+            
             <Grid VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -19,19 +20,21 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Label Text="Cedula" Grid.Row="0" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtCedula" Placeholder="Ingrese su Cedula" Grid.Row="0" Grid.Column="1"  Keyboard="Numeric"></Entry>
+                <Entry x:Name="txtCedula" Placeholder="Ingrese su Cedula" Grid.Row="0" Grid.Column="1"  Keyboard="Numeric" FontSize="Subtitle"></Entry>
                 <Label Text="Nombre" Grid.Row="1" Grid.Column="0" FontSize="Medium"/>
                 <Entry x:Name="txtNombre" Placeholder="Ingrese Nombre"  Keyboard="Text" Grid.Row="1" Grid.Column="1"></Entry>
                 <Label Text="Usuario" Grid.Row="2" Grid.Column="0" FontSize="Medium"/>
                 <Entry x:Name="txtUsuario" Placeholder="Ingrese Usuario" Keyboard="Text" Grid.Row="2" Grid.Column="1"></Entry>
-                <Label Text="Telefono" Grid.Row="3" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtTelefono" Placeholder="Ingrese Telefono" Keyboard="Telephone" Grid.Row="3" Grid.Column="1"></Entry>
-                <Label Text="Email" Grid.Row="4" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtEmail" Placeholder="Ingrese Email" Keyboard="Email" Grid.Row="4" Grid.Column="1"></Entry>
-                <Label Text="Rol" Grid.Row="5" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtRol" Placeholder="Ingrese Rol" Keyboard="Text" Grid.Row="5" Grid.Column="1"></Entry>
-                <Label Text="Estado" Grid.Row="6" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtEstado" Placeholder="Ingrese Estado" Keyboard="Text" Grid.Row="6" Grid.Column="1"></Entry>
+                <Label Text="Contraseña" Grid.Row="3" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtPass" Placeholder="Ingrese Contraseña" Keyboard="Text" Grid.Row="3" Grid.Column="1"></Entry>
+                <Label Text="Telefono" Grid.Row="4" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtTelefono" Placeholder="Ingrese Telefono" Keyboard="Telephone" Grid.Row="4" Grid.Column="1"></Entry>
+                <Label Text="Email" Grid.Row="5" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtEmail" Placeholder="Ingrese Email" Keyboard="Email" Grid.Row="5" Grid.Column="1"></Entry>
+                <Label Text="Rol" Grid.Row="6" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtRol" Placeholder="Ingrese Rol" Keyboard="Text" Grid.Row="6" Grid.Column="1"></Entry>
+                <Label Text="Estado" Grid.Row="7" Grid.Column="0" FontSize="Medium"/>
+                <Entry x:Name="txtEstado" Placeholder="Ingrese Estado" Keyboard="Text" Grid.Row="7" Grid.Column="1"></Entry>
 
             </Grid>
             <Button x:Name="btnRegistrar" VerticalOptions="Center" Text="Registrar" Clicked="btnRegistrar_Clicked" BackgroundColor="Blue" TextColor="White"/>

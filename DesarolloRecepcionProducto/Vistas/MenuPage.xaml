@@ -7,8 +7,7 @@
 
             <Label Text="MENU APLICACIÓN" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="Title"/>
             <Label Text="" />
-            <Label Text="" />
-            <Label Text="" />
+          
 
             <Grid VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
@@ -25,18 +24,18 @@
                 </Grid.ColumnDefinitions>
 
 
-                <Label Text="REGISTRO USUARIO" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center" FontSize="20" VerticalTextAlignment="End"/>
+                <Label Text="REGISTRO USUARIO" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center" FontSize="18" VerticalTextAlignment="End"/>
 
 
                 <Image Source="usuario3.png"  WidthRequest="100" HeightRequest="100" Grid.Row="1" Grid.Column="0" />
 
-                <Label Text="LISTA USUARIO" Grid.Row="0" Grid.Column="1"  HorizontalOptions="Center" FontSize="20" VerticalTextAlignment="End"/>
+                <Label Text="LISTA USUARIO" Grid.Row="0" Grid.Column="1"  HorizontalOptions="Center" FontSize="18" VerticalTextAlignment="End"/>
                 <Image Source="LisPro.jpg"  WidthRequest="100" HeightRequest="100"  Grid.Row="3" Grid.Column="0" />
 
-                <Label Text="INGRESO PRODUCTOS"  Grid.Row="2" Grid.Column="0"  HorizontalOptions="Center" FontSize="18" VerticalTextAlignment="End"/>
+                <Label Text="INGRESO PRODUCTOS"  Grid.Row="2" Grid.Column="0"  HorizontalOptions="Center" FontSize="17" VerticalTextAlignment="End"/>
                 <Image Source="ListaUsu"   WidthRequest="100" HeightRequest="100"  Grid.Row="1" Grid.Column="1"/>
 
-                <Label Text="INFO"  Grid.Row="2" Grid.Column="1"  HorizontalOptions="Center" FontSize="20" VerticalTextAlignment="End"/>
+                <Label Text="INFO"  Grid.Row="2" Grid.Column="1"  HorizontalOptions="Center" FontSize="18" VerticalTextAlignment="End"/>
                 <Image Source="descarga.png"   WidthRequest="100" HeightRequest="100" Grid.Row="3" Grid.Column="1"/>
 
 

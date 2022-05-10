@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,9 +18,31 @@ namespace DesarolloRecepcionProducto.Vistas
             InitializeComponent();
         }
 
-        private void btnRegistrar_Clicked(object sender, EventArgs e)
+        private async void btnRegistrar_Clicked(object sender, EventArgs e)
         {
+            try
+            {
+             WebClient cliente = new WebClient();
+            var parametros = new System.Collections.Specialized.NameValueCollection();
 
+            parametros.Add("cedula", txtCedula.Text);
+            parametros.Add("nombre", txtNombre.Text);
+            parametros.Add("usuario", txtUsuario.Text);
+            parametros.Add("pass", txtPass.Text);
+            parametros.Add("telefono", txtTelefono.Text);
+            parametros.Add("email", txtEmail.Text);
+            parametros.Add("rol", txtRol.Text);
+            parametros.Add("estado", txtEstado.Text);
+
+            cliente.UploadValues("http://172.20.10.8:8080/ProyectoU/post.php", "POST", parametros);
+            await DisplayAlert("alerta", "Dato Ingresado Correctamente", "ok");
+
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("alerta", "Error" + ex.Message, "ok");
+            }
         }
     }
 }

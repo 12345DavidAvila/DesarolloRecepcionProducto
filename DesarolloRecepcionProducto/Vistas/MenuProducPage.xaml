@@ -29,19 +29,21 @@
                 </Grid.ColumnDefinitions>
 
 
-                <Label Text="INGRESO PRODUCTO" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center" FontSize="17" VerticalTextAlignment="End"/>
+                <Label Text="INGRESO PRODUCTO" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center" FontSize="15" VerticalTextAlignment="End"/>
 
 
                 <Image Source="Ingreso.jfif"  WidthRequest="100" HeightRequest="100" Grid.Row="1" Grid.Column="0"  />
 
-                <Label Text="ACTUALIZAR PRODUCTO" Grid.Row="0" Grid.Column="1"  HorizontalOptions="Center" FontSize="17" VerticalTextAlignment="End" />
+                <Label Text="ACTUALIZAR PRODUCTO" Grid.Row="0" Grid.Column="1"  HorizontalOptions="Center" FontSize="15" VerticalTextAlignment="End" />
                 <Image Source="Actualizar.jfif"  WidthRequest="100" HeightRequest="100"  Grid.Row="3" Grid.Column="0" />
 
-                <Label Text="ELIMINAR PRODUCTO"  Grid.Row="2" Grid.Column="0"  HorizontalOptions="Center" FontSize="18"  VerticalTextAlignment="End"/>
+                <Label Text="ELIMINAR PRODUCTO"  Grid.Row="2" Grid.Column="0"  HorizontalOptions="Center" FontSize="15"  VerticalTextAlignment="End"/>
                 <Image Source="Eliminar.jfif"   WidthRequest="100" HeightRequest="100"  Grid.Row="1" Grid.Column="1"/>
 
-                <Label Text="BUSCAR PRODUCTO "  Grid.Row="2" Grid.Column="1"  HorizontalOptions="Center" FontSize="20" VerticalTextAlignment="End"/>
-                <Image Source="Buscar_p.jfif"   WidthRequest="100" HeightRequest="100" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="BUSCAR PRODUCTO "  Grid.Row="2" Grid.Column="1"  HorizontalOptions="Center" FontSize="15" VerticalTextAlignment="End"/>
+                <Image Source="Buscar_p.jfif"   WidthRequest="100" HeightRequest="100" Grid.Row="3" Grid.Column="1" />
+
+                <Button x:Name="btnPrueba" VerticalOptions="Center" Text="Prueba" Clicked="btnPrueba_Clicked" BackgroundColor="Blue" TextColor="White" ImageSource="LisPro.jpg" WidthRequest="100" HeightRequest="100" />
 
 
 

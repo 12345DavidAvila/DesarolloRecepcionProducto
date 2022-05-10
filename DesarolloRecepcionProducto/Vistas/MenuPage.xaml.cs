@@ -17,9 +17,9 @@ namespace DesarolloRecepcionProducto
             InitializeComponent();
         }
 
-        private void btnSalir_Clicked(object sender, EventArgs e)
+        private async void btnSalir_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new LoginPage());
         }
     }
 }
