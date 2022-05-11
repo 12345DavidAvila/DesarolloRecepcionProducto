@@ -17,6 +17,7 @@ namespace DesarolloRecepcionProducto.Vistas
             InitializeComponent();
             //prueba
             //pruebahenry
+            //prueba56
         }
     }
 }
