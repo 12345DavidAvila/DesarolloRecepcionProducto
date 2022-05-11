@@ -39,6 +39,8 @@
             </Grid>
             <Button x:Name="btnRegistrar" VerticalOptions="Center" Text="Registrar" Clicked="btnRegistrar_Clicked" BackgroundColor="Blue" TextColor="White"/>
 
+            <Button x:Name="btnRegresar" VerticalOptions="Center" Text="Menu Regresar" Clicked="btnRegresar_Clicked" BackgroundColor="Blue" TextColor="White"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

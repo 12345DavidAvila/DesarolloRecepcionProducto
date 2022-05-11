@@ -34,7 +34,7 @@ namespace DesarolloRecepcionProducto.Vistas
             parametros.Add("rol", txtRol.Text);
             parametros.Add("estado", txtEstado.Text);
 
-            cliente.UploadValues("http://172.20.10.8:8080/ProyectoU/post.php", "POST", parametros);
+            cliente.UploadValues("http://192.168.1.212:8080/ProyectoU/post.php", "POST", parametros);
             await DisplayAlert("alerta", "Dato Ingresado Correctamente", "ok");
 
 
@@ -43,6 +43,11 @@ namespace DesarolloRecepcionProducto.Vistas
             {
                 await DisplayAlert("alerta", "Error" + ex.Message, "ok");
             }
+        }
+
+        private async void btnRegresar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MenuPage());
         }
     }
 }

@@ -10,7 +10,7 @@ namespace DesarolloRecepcionProducto
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Vistas.BuscarProductoPage());
+            MainPage = new NavigationPage(new Vistas.RegUsuarioPage());
         }
 
         protected override void OnStart()

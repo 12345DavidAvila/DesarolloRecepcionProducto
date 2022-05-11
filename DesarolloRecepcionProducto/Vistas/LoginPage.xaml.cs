@@ -23,7 +23,9 @@ namespace DesarolloRecepcionProducto
 
         private async void btnIngresar_Clicked(object sender, EventArgs e)
         {
-            Login log = new Login
+            try
+            {
+                Login log = new Login
             {
                 usuario = txtUser.Text,
                 pass = txtPass.Text
@@ -40,6 +42,12 @@ namespace DesarolloRecepcionProducto
             else
             {
                 await DisplayAlert("Mensaje", "Datos invalidos", "OK");
+            }
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("alerta", "Error" + ex.Message, "ok");
             }
 
         }

@@ -22,7 +22,7 @@ namespace DesarolloRecepcionProducto.Droid
         
         public void ShortAlert(string message)
         {
-            Toast.MakeText(Application.Context, message, ToastLength.Long).Show();
+            Toast.MakeText(Application.Context, message, ToastLength.Short).Show();
         }
     }
 }
