@@ -16,6 +16,7 @@ namespace DesarolloRecepcionProducto.Vistas
         {
             InitializeComponent();
             //prueba
+            //pruebahenry
         }
     }
 }
