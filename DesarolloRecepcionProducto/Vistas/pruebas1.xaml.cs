@@ -15,6 +15,7 @@ namespace DesarolloRecepcionProducto.Vistas
         public pruebas1()
         {
             InitializeComponent();
+            //prueba
         }
     }
 }
