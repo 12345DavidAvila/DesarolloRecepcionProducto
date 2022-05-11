@@ -6,15 +6,34 @@
         <StackLayout>
             <Label Text="Lista de Usuarios" FontSize="20" HorizontalTextAlignment="Center"/>
             <Label x:Name="texto" Text=""/>
+          
+            
             <Button x:Name="btnGet" VerticalOptions="Center" Text="Consultar" Clicked="btnGet_Clicked" BackgroundColor="Blue" TextColor="White"/>
             <ListView x:Name="Listas">
             <ListView.ItemTemplate>
             <DataTemplate>
             <ViewCell>
         <StackLayout>
-            <Label x:Name="lblCedula" Text="{Binding cedula}"/>                 
-            <Label x:Name="lblNombre" Text="{Binding nombre}"/>
-            <Label x:Name="lblUsuario" Text="{Binding usuario}"/>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+              
+              
+            <Label x:Name="lblCedula" Text="{Binding cedula}" Grid.Row="0" Grid.Column="0" FontSize="10"/>  
+            <Label x:Name="texto" Text="" Grid.Row="1" Grid.Column="0"/>
+            <Label x:Name="lblNombre" Text="{Binding nombre}" Grid.Row="0" Grid.Column="1" FontSize="10"/>
+            <Label x:Name="lblUsuario" Text="{Binding usuario}" Grid.Row="1" Grid.Column="0" FontSize="20"/>
+            </Grid>  
+                
             </StackLayout>
             </ViewCell>
             </DataTemplate>
