@@ -25,31 +25,33 @@ namespace DesarolloRecepcionProducto
         {
             try
             {
-                Login log = new Login
-            {
-                usuario = txtUser.Text,
-                pass = txtPass.Text
-            };
-            Uri RequestUri = new Uri("http://172.20.10.8:8080/ProyectoU/post.php");
-            var client = new HttpClient();
-            var json = JsonConvert.SerializeObject(log);
-            var contentJson = new StringContent(json, Encoding.UTF8, "application/json");
-            var response = await client.PostAsync(RequestUri, contentJson);
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                await Navigation.PushAsync(new MenuPage());
-            }
-            else
-            {
-                await DisplayAlert("Mensaje", "Datos invalidos", "OK");
-            }
+                //Login log = new Login
+                //{
+                //    usuario = txtUser.Text,
+                //    pass = txtPass.Text
+                //};
+                Uri RequestUri = new Uri("http://192.168.1.73:8080/ProyectoU/post.php?cedula=");
+                var client = new HttpClient();
+               // var json = JsonConvert.SerializeObject(log);
+                //var contentJson = new StringContent(json, Encoding.UTF8, "application/json");
+                var response = await client.GetAsync(RequestUri);
+                
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
 
+                    var respuest = response.Content.ReadAsStringAsync();
+
+                    await Navigation.PushAsync(new MenuPage());
+                }
+                else
+                {
+                    await DisplayAlert("Mensaje", "Datos invalidos", "OK");
+                }
             }
             catch (Exception ex)
             {
-                await DisplayAlert("alerta", "Error" + ex.Message, "ok");
+                await DisplayAlert("alerta", "Error" + ex.Message, "ok");   
             }
-
         }
     }
 }

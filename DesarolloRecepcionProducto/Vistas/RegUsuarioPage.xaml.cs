@@ -34,7 +34,7 @@ namespace DesarolloRecepcionProducto.Vistas
             parametros.Add("rol", txtRol.Text);
             parametros.Add("estado", txtEstado.Text);
 
-            cliente.UploadValues("http://192.168.1.212:8080/ProyectoU/post.php", "POST", parametros);
+            cliente.UploadValues("http://192.168.1.73:8080/ProyectoU/post.php", "POST", parametros);
             await DisplayAlert("alerta", "Dato Ingresado Correctamente", "ok");
 
 

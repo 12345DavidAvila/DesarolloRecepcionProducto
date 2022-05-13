@@ -15,7 +15,7 @@ namespace DesarolloRecepcionProducto.Vistas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BuscarProductoPage : ContentPage
     {
-        private const string Url = "http://192.168.1.212:8080/ProyectoU/post.php";
+        private const string Url = "http://192.168.1.73:8080/ProyectoU/post.php";
         private readonly HttpClient client = new HttpClient();
         private ObservableCollection<DesarolloRecepcionProducto.Modelos.Login> _post;
         public BuscarProductoPage()

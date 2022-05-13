@@ -22,7 +22,7 @@
                 <Label Text="Serie" Grid.Row="0" Grid.Column="0" FontSize="Medium"/>
                 <Entry x:Name="txtSerie" Placeholder="Ingrese Serial" Grid.Row="0" Grid.Column="1" ></Entry>
                 <Label Text="Nombre" Grid.Row="1" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtNombre" Placeholder="Ingrese Nombre" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"></Entry>
+                <Entry x:Name="txtNombre" Placeholder="Ingrese Nombre" Keyboard="Text" Grid.Row="1" Grid.Column="1"></Entry>
                 <Label Text="Cantidad" Grid.Row="2" Grid.Column="0" FontSize="Medium"/>
                 <Entry x:Name="txtCantidad" Placeholder="Ingrese Cantidad" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"></Entry>
                 <Label Text="Precio Compra" Grid.Row="3" Grid.Column="0" FontSize="Medium"/>
@@ -30,15 +30,18 @@
                 <Label Text="Precio Venta" Grid.Row="4" Grid.Column="0" FontSize="Medium"/>
                 <Entry x:Name="txtPrecioVenta" Placeholder="Ingrese Precio Venta" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"></Entry>
                 <Label Text="Categoría" Grid.Row="5" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtCategoria" Placeholder="Ingrese Categoría" Keyboard="Numeric" Grid.Row="5" Grid.Column="1"></Entry>
+                <Entry x:Name="txtCategoria" Placeholder="Ingrese Categoría" Keyboard="Text" Grid.Row="5" Grid.Column="1"></Entry>
                 <Label Text="Marca" Grid.Row="6" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtMarca" Placeholder="Ingrese Marca" Keyboard="Numeric" Grid.Row="6" Grid.Column="1"></Entry>
+                <Entry x:Name="txtMarca" Placeholder="Ingrese Marca" Keyboard="Text" Grid.Row="6" Grid.Column="1"></Entry>
                 <Label Text="Ubicación" Grid.Row="7" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtUbicacion" Placeholder="Ingrese Ubicación" Keyboard="Numeric" Grid.Row="7" Grid.Column="1"></Entry>
+                <Entry x:Name="txtUbicacion" Placeholder="Ingrese Ubicación" Keyboard="Text" Grid.Row="7" Grid.Column="1"></Entry>
                 <Label Text="Estado" Grid.Row="8" Grid.Column="0" FontSize="Medium"/>
-                <Entry x:Name="txtEstado" Placeholder="Ingrese Estado" Keyboard="Numeric" Grid.Row="8" Grid.Column="1"></Entry>
+                <Entry x:Name="txtEstado" Placeholder="Ingrese Estado" Keyboard="Text" Grid.Row="8" Grid.Column="1"></Entry>
+
 
             </Grid>
+                
+            
             <Button x:Name="btnRegistrarProducto" VerticalOptions="Center" Text="Registrar Producto" Clicked="btnRegistrarProducto_Clicked" BackgroundColor="Blue" TextColor="White"/>
 
         </StackLayout>
