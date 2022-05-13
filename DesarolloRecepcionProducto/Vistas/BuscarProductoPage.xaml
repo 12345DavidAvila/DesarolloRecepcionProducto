@@ -6,24 +6,19 @@
         <StackLayout>
             <Label Text="Lista de Usuarios" FontSize="20" HorizontalTextAlignment="Center"/>
             <Label x:Name="texto" Text=""/>
-          
-            
             <Button x:Name="btnGet" VerticalOptions="Center" Text="Consultar" Clicked="btnGet_Clicked" BackgroundColor="Blue" TextColor="White"/>
-            <ListView x:Name="Listas">
-            <ListView.ItemTemplate>
+            <ListView x:Name="Listas" >
+            <ListView.SelectedItem>
             <DataTemplate>
             <ViewCell>
-        <StackLayout>
-              
-            <Label x:Name="lblCedula" Text="{Binding cedula}" Grid.Row="0" Grid.Column="0" FontSize="15" TextColor="Black"/>
-            <Label x:Name="lblNombre" Text="{Binding nombre}" Grid.Row="0" Grid.Column="1" FontSize="15" TextColor="Black"/>
-            <Label x:Name="lblUsuario" Text="{Binding usuario}" Grid.Row="1" Grid.Column="0" FontSize="15" TextColor="Black"/>
-            
-                
+            <StackLayout>
+            <Label x:Name="lblCedula" Text="{Binding cedula}"   FontSize="15" TextColor="Black"/>
+            <Label x:Name="lblNombre" Text="{Binding nombre}"  FontSize="15" TextColor="Black"/>
+            <Label x:Name="lblUsuario" Text="{Binding telefono}"  FontSize="15" TextColor="Black"/>
             </StackLayout>
             </ViewCell>
             </DataTemplate>
-            </ListView.ItemTemplate>
+            </ListView.SelectedItem>
             </ListView>
         </StackLayout>
     </ContentPage.Content>
