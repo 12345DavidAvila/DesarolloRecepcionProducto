@@ -13,11 +13,11 @@
             <ListView.ItemTemplate>
             <DataTemplate>
             <ViewCell>
-        <StackLayout>
+            <StackLayout>
               
             <Label x:Name="lblCedula" Text="{Binding cedula}" Grid.Row="0" Grid.Column="0" FontSize="15" TextColor="Black"/>
             <Label x:Name="lblNombre" Text="{Binding nombre}" Grid.Row="0" Grid.Column="1" FontSize="15" TextColor="Black"/>
-            <Label x:Name="lblUsuario" Text="{Binding usuario}" Grid.Row="1" Grid.Column="0" FontSize="15" TextColor="Black"/>
+            <Label x:Name="lblUsuario" Text="{Binding usuario}" Grid.Row="0" Grid.Column="2" FontSize="15" TextColor="Black"/>
             
                 
             </StackLayout>
