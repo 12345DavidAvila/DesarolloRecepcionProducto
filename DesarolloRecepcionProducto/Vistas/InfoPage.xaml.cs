@@ -17,9 +17,9 @@ namespace DesarolloRecepcionProducto.Vistas
             InitializeComponent();
         }
 
-        private void btnRegresarMenu_Clicked(object sender, EventArgs e)
+        private async void btnRegresarMenu_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new MenuPage());
         }
     }
 }
