@@ -19,7 +19,7 @@ namespace DesarolloRecepcionProducto.Vistas
 
         private async void btnRegresarMenu_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Vistas.MenuProducPage());
+            await Navigation.PushAsync(new MenuPage());
         }
     }
 }

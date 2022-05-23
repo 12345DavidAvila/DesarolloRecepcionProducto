@@ -19,7 +19,7 @@
                     <ColumnDefinition/>
 
                 </Grid.ColumnDefinitions>
-                <Label Text="SISTEMA DE INGRESO DE PRODUCTOS" Grid.Row="0"  FontSize="Medium" HorizontalOptions="Center"/>
+                <Label Text="SISTEMA DE INGRESO DE PRODUCTOS H" Grid.Row="0"  FontSize="Medium" HorizontalOptions="Center"/>
                 <Label Text="ELABORADO POR:" Grid.Row="1" FontSize="Medium"  HorizontalOptions="Center"/>
                 <Label Text="DAVID AVILA" Grid.Row="2"  FontSize="Medium"  HorizontalOptions="Center"/>
                 <Label Text="HENRY LLANES" Grid.Row="3"  FontSize="Medium"  HorizontalOptions="Center"/>
