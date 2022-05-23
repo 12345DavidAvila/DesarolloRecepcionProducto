@@ -23,22 +23,22 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
+   <Label Text="REGISTRO USUARIO" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center" FontSize="18" VerticalTextAlignment="End"/>
 
-                <Label Text="REGISTRO USUARIO" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center" FontSize="18" VerticalTextAlignment="End"/>
-
-
-                <Image Source="usuario3.png"  WidthRequest="100" HeightRequest="100" Grid.Row="1" Grid.Column="0" />
+                <ImageButton Source="usuario3.png"   Grid.Row="1" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" Clicked="ImageButton_Clicked"/>
 
                 <Label Text="LISTA USUARIO" Grid.Row="0" Grid.Column="1"  HorizontalOptions="Center" FontSize="18" VerticalTextAlignment="End"/>
-                <Image Source="LisPro.jpg"  WidthRequest="100" HeightRequest="100"  Grid.Row="3" Grid.Column="0" />
+                <ImageButton Source="LisPro.jpg"    Grid.Row="3" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" Clicked="ImageButton_Clicked_1" />
 
                 <Label Text="INGRESO PRODUCTOS"  Grid.Row="2" Grid.Column="0"  HorizontalOptions="Center" FontSize="17" VerticalTextAlignment="End"/>
-                <Image Source="ListaUsu"   WidthRequest="100" HeightRequest="100"  Grid.Row="1" Grid.Column="1"/>
+                <ImageButton Source="ListaUsu"    Grid.Row="1" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" Clicked="ImageButton_Clicked_2"/>
 
                 <Label Text="INFO"  Grid.Row="2" Grid.Column="1"  HorizontalOptions="Center" FontSize="18" VerticalTextAlignment="End"/>
-                <Image Source="descarga.png"   WidthRequest="100" HeightRequest="100" Grid.Row="3" Grid.Column="1"/>
-
-
+                <ImageButton Source="descarga.png"    Grid.Row="3" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" Clicked="ImageButton_Clicked_3"/>
 
             </Grid>
 
