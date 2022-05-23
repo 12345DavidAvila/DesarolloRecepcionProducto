@@ -24,22 +24,22 @@ namespace DesarolloRecepcionProducto
 
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LoginPage());
+            await Navigation.PushAsync(new Vistas.RegUsuarioPage());
         }
 
-        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        private async void ImageButton_Clicked_1(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Vistas.MenuProducPage());
         }
 
-        private void ImageButton_Clicked_2(object sender, EventArgs e)
+        private async void ImageButton_Clicked_2(object sender, EventArgs e)
         {
-
+           await Navigation.PushAsync(new Vistas.InfoPage());
         }
 
-        private void ImageButton_Clicked_3(object sender, EventArgs e)
+        private  async void ImageButton_Clicked_3(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Vistas.BuscarProductoPage());
         }
     }
 }
