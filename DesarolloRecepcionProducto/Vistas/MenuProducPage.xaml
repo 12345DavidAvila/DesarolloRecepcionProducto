@@ -30,7 +30,7 @@
 
 
                 <ImageButton  Source="Actualizar.jfif"  Grid.Row="1" Grid.Column="0"    VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center" Clicked="ImageButton_Clicked_1"/>
+                HorizontalOptions="Center" Clicked="ImageButton_Clicked"/>
 
                 <Label Text="ACTUALIZAR PRODUCTO" Grid.Row="0" Grid.Column="1"  HorizontalOptions="Center" FontSize="15" VerticalTextAlignment="End" />
                 <ImageButton Source="Actualizar.jfif"  Grid.Row="3" Grid.Column="0"  VerticalOptions="CenterAndExpand"
