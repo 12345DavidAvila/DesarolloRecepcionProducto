@@ -36,22 +36,42 @@ namespace DesarolloRecepcionProducto.Vistas
                 parametros.Add("ubicacion", txtUbicacion.Text);
                 parametros.Add("estado", txtEstado.Text);
 
-                cliente.UploadValues("http://192.168.1.73:8080/ProyectoU/postProducto.php", "POST", parametros);
+                cliente.UploadValues("http://192.168.1.212:8080/ProyectoU/postProducto.php", "POST", parametros);
                 await DisplayAlert("Alerta", "Producto Ingresado Correctamente", "ok");
-                
-                
+                limpiarFormulario();
+
             }
             catch (Exception ex)
             {
                 await DisplayAlert("alerta", "Error" + ex.Message, "ok");
             }
         }
+
+        void limpiarFormulario()
+        {
+            txtSerie.Text = "";
+            txtNombre.Text = "";
+            txtCantidad.Text = "";
+            txtPrecioCompra.Text = "";
+            txtPrecioVenta.Text = "";
+            txtCategoria.Text = "";
+            txtMarca.Text = "";
+            txtUbicacion.Text = "";
+            txtEstado.Text = "";
+        }
+
         public IList<string> CountryList
         {
             get
             {
                 return new List<string> { "USA", "Germany", "England" };
             }
+        }
+
+        private async void btnRegresar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MenuProducPage());
+
         }
     }
     

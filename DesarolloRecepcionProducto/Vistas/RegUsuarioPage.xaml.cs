@@ -36,13 +36,26 @@ namespace DesarolloRecepcionProducto.Vistas
 
             cliente.UploadValues("http://192.168.1.212:8080/ProyectoU/post.php", "POST", parametros);
             await DisplayAlert("alerta", "Dato Ingresado Correctamente", "ok");
-
+            limpiarFormulario();
 
             }
             catch (Exception ex)
             {
                 await DisplayAlert("alerta", "Error" + ex.Message, "ok");
             }
+        }
+
+         void limpiarFormulario()
+        {
+            txtCedula.Text = "";
+            txtNombre.Text = "";
+            txtUsuario.Text = "";
+            txtPass.Text = "";
+            txtTelefono.Text = "";
+            txtEmail.Text = "";
+            txtRol.Text = "";
+            txtEstado.Text = "";
+
         }
 
         private async void btnRegresar_Clicked(object sender, EventArgs e)

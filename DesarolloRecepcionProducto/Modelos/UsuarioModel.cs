@@ -6,30 +6,36 @@ namespace DesarolloRecepcionProducto.Modelos
 {
     public class UsuarioModel
     {
-        private int idUsuario;
+        private string cedula;
 
-        public int IdUsuario
+        public string Cedula
         {
-            get { return idUsuario; }
-            set { idUsuario = value; }
+            get { return cedula; }
+            set { cedula = value; }
         }
 
-        private string documentoIdentidad;
+        private string nombre;
 
-        public string DocumentoIdentidad
+        public string Nombre
         {
-            get { return documentoIdentidad; }
-            set { documentoIdentidad = value; }
+            get { return nombre; }
+            set { nombre = value; }
         }
 
-        private string nombres;
+        private string usuario;
 
-        public string Nombres
+        public string Usuario
         {
-            get { return nombres; }
-            set { nombres = value; }
+            get { return usuario; }
+            set { usuario = value; }
         }
+        private string pass;
 
+        public string Pass
+        {
+            get { return pass; }
+            set { pass = value; }
+        }
         private string telefono;
 
         public string Telefono
@@ -38,29 +44,30 @@ namespace DesarolloRecepcionProducto.Modelos
             set { telefono = value; }
         }
 
-        private string correo;
+        private string email;
 
-        public string Correo
+        public string Email
         {
-            get { return correo; }
-            set { correo = value; }
+            get { return email; }
+            set { email = value; }
         }
 
-        private string ciudad;
+        private string rol;
 
-        public string Ciudad
+        public string Rol
         {
-            get { return ciudad; }
-            set { ciudad = value; }
+            get { return rol; }
+            set { rol = value; }
         }
 
-        private DateTime fechaRegistro;
+        private string estado;
 
-        public DateTime FechaRegistro
+        public string Estado
         {
-            get { return fechaRegistro; }
-            set { fechaRegistro = value; }
+            get { return estado; }
+            set { estado = value; }
         }
+
 
     }
 }

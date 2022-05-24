@@ -29,24 +29,24 @@ namespace DesarolloRecepcionProducto.Vistas
             await Navigation.PushAsync(new LoginPage());
         }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
+        private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new IngresoProductoPage());
         }
 
-        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        private async void ImageButton_Clicked_1(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new BuscarPage());
         }
 
-        private void ImageButton_Clicked_2(object sender, EventArgs e)
+        private async  void ImageButton_Clicked_2(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ActualizarProductoPage());
         }
 
-        private void ImageButton_Clicked_3(object sender, EventArgs e)
+        private async void ImageButton_Clicked_3(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new LoginPage());
         }
     }
 }

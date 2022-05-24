@@ -43,6 +43,7 @@
                 
             
             <Button x:Name="btnRegistrarProducto" VerticalOptions="Center" Text="Registrar Producto" Clicked="btnRegistrarProducto_Clicked" BackgroundColor="Blue" TextColor="White"/>
+            <Button x:Name="btnRegresar" VerticalOptions="Center" Text="Menu Regresar" Clicked="btnRegresar_Clicked" BackgroundColor="Red" TextColor="White"/>
 
         </StackLayout>
     </ContentPage.Content>
