@@ -17,6 +17,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Vistas\Cambio.xaml.cs">
+      <DependentUpon>Cambio.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Vistas\pruebas.xaml.cs">
+      <DependentUpon>pruebas.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Vistas\ActualizarProductoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -47,10 +56,10 @@
     <EmbeddedResource Update="Vistas\MenuProducPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Vistas\Prueba2.xaml">
+    <EmbeddedResource Update="Vistas\Cambio.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Vistas\pruebas1.xaml">
+    <EmbeddedResource Update="Vistas\pruebas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Vistas\RegUsuarioPage.xaml">
