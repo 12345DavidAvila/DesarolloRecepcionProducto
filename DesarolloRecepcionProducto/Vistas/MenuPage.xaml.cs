@@ -39,7 +39,7 @@ namespace DesarolloRecepcionProducto
 
         private  async void ImageButton_Clicked_3(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Vistas.BuscarProductoPage());
+            await Navigation.PushAsync(new Vistas.BuscarPage());
         }
     }
 }
