@@ -54,7 +54,16 @@ namespace DesarolloRecepcionProducto.Vistas
                 {
                     string content = await response.Content.ReadAsStringAsync();
                     ProductoModel usuarioModel = JsonConvert.DeserializeObject<ProductoModel>(content);
+                    txtcodigo.Text = usuarioModel.Codigo.ToString(); 
                     txtserie.Text = usuarioModel.Serie;
+                    txtnombre.Text = usuarioModel.Nombre;
+                    txtcantidad.Text = usuarioModel.Cantidad;
+                    txtprecioCompra.Text = usuarioModel.PrecioCompra;
+                    txtprecioVenta.Text = usuarioModel.PrecioVenta;
+                    txtcategoria.Text = usuarioModel.Categoria;
+                    txtmarca.Text = usuarioModel.Marca;
+                    txtubicacion.Text = usuarioModel.Ubicacion;
+                    txtestado.Text = usuarioModel.Estado;
 
 
                     //btnguardar.IsVisible = false;
@@ -67,6 +76,7 @@ namespace DesarolloRecepcionProducto.Vistas
 
         private async void btneliminar_Clicked(object sender, EventArgs e)
         {
+            
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri(uri + txtcodigo.Text);
             request.Method = HttpMethod.Delete;
@@ -76,7 +86,7 @@ namespace DesarolloRecepcionProducto.Vistas
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 await DisplayAlert("Datos", "Se elimino correctamente", "ok");
-                txtserie.Text = "";
+                txtcodigo.Text = "";
                 
                 llenarDatos();
                 

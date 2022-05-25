@@ -6,9 +6,9 @@ namespace DesarolloRecepcionProducto.Modelos
 {
     public class ProductoModel
     {
-        private string codigo;
+        private int codigo;
 
-        public string Codigo
+        public int Codigo
         {
             get { return codigo; }
             set { codigo = value; }

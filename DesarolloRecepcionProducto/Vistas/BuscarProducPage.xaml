@@ -4,9 +4,18 @@
              x:Class="DesarolloRecepcionProducto.Vistas.BuscarProducPage">
     <ScrollView>
         <StackLayout  Padding="8,8,8,8">
-            <Entry x:Name="txtcodigo" IsVisible="false" />
+            
             <Label Text="Serie" FontAttributes="Bold" TextColor="Black" IsVisible="False" />
+            <Entry x:Name="txtcodigo" Placeholder="Codigo"  IsVisible="False" />
             <Entry x:Name="txtserie" Placeholder="Serie"  IsVisible="False" />
+            <Entry x:Name="txtnombre" Placeholder="Nombre"  IsVisible="False" />
+            <Entry x:Name="txtcantidad" Placeholder="Cantidad"  IsVisible="False" />
+            <Entry x:Name="txtprecioCompra" Placeholder="Precio Compra"  IsVisible="False" />
+            <Entry x:Name="txtprecioVenta" Placeholder="Precio Venta"  IsVisible="False" />
+            <Entry x:Name="txtcategoria" Placeholder="Categoria"  IsVisible="False" />
+            <Entry x:Name="txtmarca" Placeholder="Marca"  IsVisible="False" />
+            <Entry x:Name="txtubicacion" Placeholder="Ubicación"  IsVisible="False" />
+            <Entry x:Name="txtestado" Placeholder="Estado"  IsVisible="False" />
             
             <Button Text="Eliminar"  Grid.Row="2"
                                     Margin="5"
