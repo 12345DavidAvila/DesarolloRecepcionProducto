@@ -2,27 +2,72 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DesarolloRecepcionProducto.Vistas.BuscarProductoPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Lista de Usuarios" FontSize="20" HorizontalTextAlignment="Center"/>
-            <Label x:Name="texto" Text=""/>
-            <Button x:Name="btnGet" VerticalOptions="Center" Text="Consultar" Clicked="btnGet_Clicked" BackgroundColor="Blue" TextColor="White"/>
-            <ListView x:Name="Listas" >
-            <ListView.SelectedItem>
-            <DataTemplate>
-            <ViewCell>
-            <StackLayout>
-              
-            <Label x:Name="lblCedula" Text="{Binding cedula}" Grid.Row="0" Grid.Column="0" FontSize="15" TextColor="Black"/>
-            <Label x:Name="lblNombre" Text="{Binding nombre}" Grid.Row="0" Grid.Column="1" FontSize="15" TextColor="Black"/>
+    <ScrollView>
+        <StackLayout  Padding="8,8,8,8">
+
+            <Label Text="Serie" FontAttributes="Bold" TextColor="Black" IsVisible="False" />
+            <Entry x:Name="txtcodigo" Placeholder="Codigo"  IsVisible="False" />
+            <Entry x:Name="txtserie" Placeholder="Serie"  IsVisible="False" />
+            <Entry x:Name="txtnombre" Placeholder="Nombre"  IsVisible="False" />
+            <Entry x:Name="txtcantidad" Placeholder="Cantidad"  IsVisible="False" />
+            <Entry x:Name="txtprecioCompra" Placeholder="Precio Compra"  IsVisible="False" />
+            <Entry x:Name="txtprecioVenta" Placeholder="Precio Venta"  IsVisible="False" />
+            <Entry x:Name="txtcategoria" Placeholder="Categoria"  IsVisible="False" />
+            <Entry x:Name="txtmarca" Placeholder="Marca"  IsVisible="False" />
+            <Entry x:Name="txtubicacion" Placeholder="Ubicación"  IsVisible="False" />
+            <Entry x:Name="txtestado" Placeholder="Estado"  IsVisible="False" />
+
             
-            
-                
-            </StackLayout>
-            </ViewCell>
-            </DataTemplate>
-            </ListView.SelectedItem>
-            </ListView>
+            <Label Text="PRODUCTOS" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="CadetBlue"/>
+
+            <ScrollView HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Margin="5">
+                <ListView x:Name="lstProducto" ItemSelected="lstProducto_ItemSelected" 
+                          BackgroundColor="WhiteSmoke">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Margin="5">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Text="Serie" Grid.Row="0" Grid.Column="0" TextColor="Black" FontSize="10"/>
+                                    <Label Text="Nombres" Grid.Row="0" Grid.Column="1" TextColor="Black" FontSize="10"/>
+                                    <Label Text="Cantidad" Grid.Row="0" Grid.Column="2" TextColor="Black" FontSize="10"/>
+                                    <Label Text="PVP" Grid.Row="0" Grid.Column="3" TextColor="Black" FontSize="10"/>
+                                    <Label Text="Estado" Grid.Row="0" Grid.Column="4" TextColor="Black" FontSize="10"/>
+
+                                    <Label Text="{Binding Serie}" Grid.Row="1" Grid.Column="0" TextColor="Gray" FontSize="10"/>
+                                    <Label Text="{Binding Nombre}" Grid.Row="1" Grid.Column="1" TextColor="Gray" FontSize="10"/>
+                                    <Label Text="{Binding Cantidad}" Grid.Row="1" Grid.Column="2" TextColor="Blue" FontSize="10"/>
+                                    <Label Text="{Binding PrecioVenta}" Grid.Row="1" Grid.Column="3" TextColor="Gray" FontSize="10"/>
+                                    <Label Text="{Binding Estado}" Grid.Row="1" Grid.Column="4" TextColor="Gray" FontSize="10"/>
+
+
+
+                                </Grid>
+
+                            </ViewCell>
+
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </ScrollView>
+
         </StackLayout>
-    </ContentPage.Content>
+
+    </ScrollView>
+
+
+
 </ContentPage>

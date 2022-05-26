@@ -10,7 +10,7 @@
 
             <Entry x:Name="txtUser" Placeholder="Usuario" TextColor="Black" HorizontalTextAlignment="Center" />
 
-            <Entry x:Name="txtPass" Placeholder="Contraseña" TextColor="Black" HorizontalTextAlignment="Center" />
+            <Entry x:Name="txtPass" Placeholder="Contraseña" TextColor="Black" HorizontalTextAlignment="Center" IsPassword="True"/>
             <Button x:Name="btnIngresar" VerticalOptions="Center" Text="Ingresar" Clicked="btnIngresar_Clicked" BackgroundColor="Blue" TextColor="White"/>
         </StackLayout>
     </ContentPage.Content>

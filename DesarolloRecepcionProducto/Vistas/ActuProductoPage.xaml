@@ -1,30 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DesarolloRecepcionProducto.Vistas.BuscarProducPage">
+             x:Class="DesarolloRecepcionProducto.Vistas.ActuProductoPage">
     <ScrollView>
         <StackLayout  Padding="8,8,8,8">
-            
+
             <Label Text="Serie" FontAttributes="Bold" TextColor="Black" IsVisible="False" />
             <Entry x:Name="txtcodigo" Placeholder="Codigo"  IsVisible="False" />
-            <Entry x:Name="txtserie" Placeholder="Serie"  IsVisible="False" />
-            <Entry x:Name="txtnombre" Placeholder="Nombre"  IsVisible="False" />
-            <Entry x:Name="txtcantidad" Placeholder="Cantidad"  IsVisible="False" />
-            <Entry x:Name="txtprecioCompra" Placeholder="Precio Compra"  IsVisible="False" />
-            <Entry x:Name="txtprecioVenta" Placeholder="Precio Venta"  IsVisible="False" />
-            <Entry x:Name="txtcategoria" Placeholder="Categoria"  IsVisible="False" />
-            <Entry x:Name="txtmarca" Placeholder="Marca"  IsVisible="False" />
-            <Entry x:Name="txtubicacion" Placeholder="Ubicación"  IsVisible="False" />
-            <Entry x:Name="txtestado" Placeholder="Estado"  IsVisible="False" />
+            <Entry x:Name="txtserie" Placeholder="Serie"  IsVisible="true" />
+            <Entry x:Name="txtnombre" Placeholder="Nombre"  IsVisible="true" />
+            <Entry x:Name="txtcantidad" Placeholder="Cantidad"  IsVisible="true" />
+            <Entry x:Name="txtprecioCompra" Placeholder="Precio Compra"  IsVisible="true" />
+            <Entry x:Name="txtprecioVenta" Placeholder="Precio Venta"  IsVisible="true" />
+            <Entry x:Name="txtcategoria" Placeholder="Categoria"  IsVisible="true" />
+            <Entry x:Name="txtmarca" Placeholder="Marca"  IsVisible="true" />
+            <Entry x:Name="txtubicacion" Placeholder="Ubicación"  IsVisible="true" />
+            <Entry x:Name="txtestado" Placeholder="Estado"  IsVisible="true" />
+
             
-            <Button Text="Eliminar"  Grid.Row="2"
-                                    Margin="5"
-                                    BackgroundColor="Red"
-                                    TextColor="White"
-                                    CornerRadius="10"
-                                        x:Name="btneliminar"
-                                    Clicked="btneliminar_Clicked"
-                                    IsVisible="True"/>
             <Button Text="Modificar"  Grid.Row="2"
                     Margin="5"
                     BackgroundColor="Blue"
@@ -32,7 +25,7 @@
                     CornerRadius="10"
                         x:Name="btnmodificar"
                     Clicked="btnmodificar_Clicked"
-                    IsVisible="false"/>
+                    IsVisible="true"/>
             <Label Text="PRODUCTOS" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="CadetBlue"/>
 
             <ScrollView HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Margin="5">
@@ -66,23 +59,23 @@
                                     <Label Text="{Binding PrecioVenta}" Grid.Row="1" Grid.Column="3" TextColor="Gray" FontSize="10"/>
                                     <Label Text="{Binding Estado}" Grid.Row="1" Grid.Column="4" TextColor="Gray" FontSize="10"/>
 
-                                             
+
 
                                 </Grid>
-                                
+
                             </ViewCell>
-                            
+
                         </DataTemplate>
-                        
+
                     </ListView.ItemTemplate>
                 </ListView>
-                
+
             </ScrollView>
-    
+
         </StackLayout>
-        
+
     </ScrollView>
-    
+
 
 
 </ContentPage>

@@ -36,17 +36,17 @@ namespace DesarolloRecepcionProducto.Vistas
 
         private async void ImageButton_Clicked_1(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BuscarPage());
+            await Navigation.PushAsync(new BuscarProducPage());
         }
 
         private async  void ImageButton_Clicked_2(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ActualizarProductoPage());
+            await Navigation.PushAsync(new ActuProductoPage());
         }
 
         private async void ImageButton_Clicked_3(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BuscarProducPage());
+            await Navigation.PushAsync(new BuscarProductoPage());
         }
     }
 }

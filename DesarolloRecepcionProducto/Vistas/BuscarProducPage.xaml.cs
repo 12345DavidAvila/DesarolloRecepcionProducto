@@ -16,7 +16,9 @@ namespace DesarolloRecepcionProducto.Vistas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BuscarProducPage : ContentPage
     {
-        Uri uri = new Uri("http://192.168.1.212:8080/ProyectoU/postProducto.php");
+        String codigo = "";
+
+        Uri uri = new Uri("http://192.168.1.73:8080/ProyectoU/postProducto.php");
         public BuscarProducPage()
         {
             InitializeComponent();
@@ -45,25 +47,29 @@ namespace DesarolloRecepcionProducto.Vistas
             if (!string.IsNullOrEmpty(obj.Codigo.ToString()))
             {
                 var request = new HttpRequestMessage();
-                request.RequestUri = new Uri(uri + obj.Codigo.ToString());
+                request.RequestUri = new Uri(uri + "?codigo=" + obj.Codigo.ToString());             
                 request.Method = HttpMethod.Get;
                 request.Headers.Add("Accept", "application/json");
+               
                 var client = new HttpClient();
                 HttpResponseMessage response = await client.SendAsync(request);
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     string content = await response.Content.ReadAsStringAsync();
                     ProductoModel usuarioModel = JsonConvert.DeserializeObject<ProductoModel>(content);
-                    txtcodigo.Text = usuarioModel.Codigo.ToString(); 
-                    txtserie.Text = usuarioModel.Serie;
-                    txtnombre.Text = usuarioModel.Nombre;
-                    txtcantidad.Text = usuarioModel.Cantidad;
-                    txtprecioCompra.Text = usuarioModel.PrecioCompra;
-                    txtprecioVenta.Text = usuarioModel.PrecioVenta;
-                    txtcategoria.Text = usuarioModel.Categoria;
-                    txtmarca.Text = usuarioModel.Marca;
-                    txtubicacion.Text = usuarioModel.Ubicacion;
-                    txtestado.Text = usuarioModel.Estado;
+                    
+                    codigo = usuarioModel.Codigo.ToString();
+
+                    //txtcodigo.Text = usuarioModel.Codigo.ToString(); 
+                    //txtserie.Text = usuarioModel.Serie;
+                    //txtnombre.Text = usuarioModel.Nombre;
+                    //txtcantidad.Text = usuarioModel.Cantidad;
+                    //txtprecioCompra.Text = usuarioModel.PrecioCompra;
+                    //txtprecioVenta.Text = usuarioModel.PrecioVenta;
+                    //txtcategoria.Text = usuarioModel.Categoria;
+                    //txtmarca.Text = usuarioModel.Marca;
+                    //txtubicacion.Text = usuarioModel.Ubicacion;
+                    //txtestado.Text = usuarioModel.Estado;
 
 
                     //btnguardar.IsVisible = false;
@@ -78,7 +84,7 @@ namespace DesarolloRecepcionProducto.Vistas
         {
             
             var request = new HttpRequestMessage();
-            request.RequestUri = new Uri(uri + txtcodigo.Text);
+            request.RequestUri = new Uri(uri + "?codigo=" + codigo);
             request.Method = HttpMethod.Delete;
             request.Headers.Add("Accept", "application/json");
             var client = new HttpClient();
@@ -97,6 +103,13 @@ namespace DesarolloRecepcionProducto.Vistas
                 await DisplayAlert("Datos", "Ocurrio un error", "ok");
             }
 
+        }
+
+        private async void btnmodificar_Clicked(object sender, EventArgs e)
+        {
+            
+                await Navigation.PushAsync(new ActualizarProductoPage(codigo));
+            
         }
     }
 }

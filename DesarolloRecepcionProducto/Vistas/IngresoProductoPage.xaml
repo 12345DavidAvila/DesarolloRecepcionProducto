@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Label Text="REGISTRO USUARIO" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="Title"/>
+            <Label Text="REGISTRO PRODUCTOS" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="Title"/>
 
             <Grid VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>

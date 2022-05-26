@@ -36,7 +36,7 @@ namespace DesarolloRecepcionProducto.Vistas
                 parametros.Add("ubicacion", txtUbicacion.Text);
                 parametros.Add("estado", txtEstado.Text);
 
-                cliente.UploadValues("http://192.168.1.212:8080/ProyectoU/postProducto.php", "POST", parametros);
+                cliente.UploadValues("http://192.168.1.73:8080/ProyectoU/postProducto.php", "POST", parametros);
                 await DisplayAlert("Alerta", "Producto Ingresado Correctamente", "ok");
                 limpiarFormulario();
 

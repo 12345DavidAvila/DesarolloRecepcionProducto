@@ -16,7 +16,7 @@ namespace DesarolloRecepcionProducto.Vistas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BuscarPage : ContentPage
     {
-        Uri uri = new Uri("http://192.168.1.212:8080/ProyectoU/post.php");
+        Uri uri = new Uri("http://192.168.1.73:8080/ProyectoU/post.php");
         public BuscarPage()
         {
             InitializeComponent();
